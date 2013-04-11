@@ -1,0 +1,37 @@
+div.example{
+	position:relative;
+    background-image: url('../images/bg.png');
+	background-repeat:no-repeat;
+}
+
+div.obstacle{
+    position:absolute;
+    left: 50px;
+    top: 50px;
+    width: 300px;
+    height: 50px;
+
+    background-color: red;
+	background-repeat:no-repeat;
+
+    opacity: 0.3;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=27.5);
+}
+
+div.mask{
+	width:400px;
+	height:400px;
+    -webkit-mask-image: url('../images/mask.png');
+	background-repeat:no-repeat;
+}
+
+#example1 div.mask{
+    clip-path: url('../images/mask.svg#mask');
+}
+
+#example2 div.mask{
+}
+
+#example3 div.mask{
+    background-color:transparent;
+}
