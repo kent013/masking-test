@@ -5,9 +5,12 @@
   </head>
   <body>
     <h1>マスクテスト (Masking Test Script)</h1>
-    <p>WebKit(Chrome/Safari)では、どの例でも-webkit-mask-imageを用いる<br>
-      IE6-8ではSVGをIE9-10ではprogid:DXImageTransform.Microsoft.Chromaを用いる</p>
-    <p>Using -webkit-mask-image for WebKit(Chrome Safari) in all examples<br>
+    <p><a href="http://thenittygritty.co/css-masking">CSS Masks – How To Use Masking In CSS Now</a>の手法でマスキングしたらアニメーションではまった件に対処しようとしたサンプル<br>
+      Images masked with tip from <a href="http://thenittygritty.co/css-masking">CSS Masks – How To Use Masking In CSS Now</a> will fail to animate on FireFox and IE9... and this is a example script of struggling to animate masked images.<br/>
+    <p>
+      WebKit(Chrome/Safari)では、どの例でも-webkit-mask-imageを用いる<br>
+      IE6-8ではSVGをIE9-10ではprogid:DXImageTransform.Microsoft.Chromaを用いる<br>
+      Using -webkit-mask-image for WebKit(Chrome Safari) in all examples<br>
       Using SVG for IE6-8, and Using progid:DXImageTransform.Microsoft.Chroma For IE9-IE10.</p>
     
     <h2>Ex1</h2>
@@ -29,12 +32,15 @@
 
     <h2>Ex3</h2>
     <p>IEでは独自でfadeIn/fadeOut （背景が黒ければまぁOKなんだけど...）</p>
-    <p>Tryed to fix Fxxking IE9... Suceeded If background color is black.</p>
+    <p>Tryed to fix animation on Fxxking IE9... Suceeded If background color is black.</p>
     <div id="example3" class="example">
       <div class="mask"></div>
       <p><a class="animate" href="javascript:void(0);">Click to Fade In/Out</a> <a class="toggle-obstable" href="javascript:void(0);">Toggle Obstacle</a></p>
     </div>
 
+    <p>Photo by (c)Tomo.Yun.<br>
+      このサンプルで使われている画像は <a href="http://www.yunphoto.net">ゆんフリー写真素材集</a>から拝借しました。<br>
+    All photos on this example are borrowed from <a href="http://www.yunphoto.net">ゆんフリー車新素材集</a>.</p>
 
     <script src="js/jquery-1.9.1.min.js"></script>
     <script src="js/jquery.mb.browser.min.js"></script>
