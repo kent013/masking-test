@@ -13,7 +13,7 @@ $().ready(function () {
     //example1
     layer = $('#example1 div.mask');
     if((!$.support.checkOn && $.support.checkClone) || $.browser.mozilla){
-        layer.css('background-image', 'url(../images/image.png)');
+        layer.css('background-image', 'url(images/image.png)');
     }else{
         image = '<img src="' + 'images/image.png' + '"/>';
         content = getMaskedContent('mozie1', image, 'images/mask.png', 'images/mask_mozie.png', 400, 400);
@@ -23,7 +23,7 @@ $().ready(function () {
     //example2
     layer = $('#example2 div.mask');
     if((!$.support.checkOn && $.support.checkClone)){
-        layer.css('background-image', 'url(../images/image.png)');
+        layer.css('background-image', 'url(images/image.png)');
     }else{
         image = '<img src="' + 'images/image.png' + '"/>';
         content = getMaskedContent('mozie2', image, 'images/mask.png', 'images/mask_mozie.png', 400, 400);
@@ -45,7 +45,7 @@ $().ready(function () {
     //example3
     layer = $('#example3 div.mask');
     if((!$.support.checkOn && $.support.checkClone)){
-        layer.css('background-image', 'url(../images/image.png)');
+        layer.css('background-image', 'url(images/image.png)');
     }else{
         image = '<img src="' + 'images/image.png' + '"/>';
         content = getMaskedContent('mozie3', image, 'images/mask.png', 'images/mask_mozie.png', 400, 400);
